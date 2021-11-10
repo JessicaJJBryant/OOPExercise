@@ -72,8 +72,20 @@ class DMCast extends DM {
         super(t, m);
         this.cast = c;
     }
+    // 6a
+    static create(t, m, c){
+        return new this(t, m, c);
+    }
 }
 // 5d
 const mulan3 = new DMCast(`Mulan`, `Fa Mulan`, {mulan: `Ming-Na Wen`, mushu: `Eddie Murphy`, shang: `BD Wong`, theEmperor: `Pat Morita`});
 // 5e
 const rapunzel3 = new DMCast(`Tangled`, `Rapunzel`, {rapunzel: `Mandy Moore`, flynnRider: `Zachary Levi`, motherGothel: `Donna Murphy`});
+
+
+// BONUS
+// 6a---see above
+// 6b
+const moana = DMCast.create(`Moana`, `Moana of Motunui`, {moana: `Auli'i Cravalho`, maui: `Dwayne Johnson`, grammaTala: `Rachel House`, chiefTui: `Temuera Morrison`});
+// 6c
+console.log(moana);
